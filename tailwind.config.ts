@@ -8,11 +8,34 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      backgroundColor: {
+        skin: {
+          primary: 'var(--primary-background-color)',
+          highlight: 'var( --highlight-background-color)',
+        }
       },
+
+      textColor: {
+        skin: {
+          primary: 'var(--primary-text-color)',
+          hover: 'var(--hover-text-color)',
+        }
+      },
+
+      borderColor: {
+        skin: {
+          base: 'var(--primary-background-color)',
+          inverted: 'var(--highlight-background-color)',
+        }
+      },
+
+      boxShadowColor: {
+        skin: {
+          primary: 'var(--primary-shadow-color)',
+          invebackgroundrted: 'var(--background-shadow-color)',
+        }
+      },
+
     },
   },
   plugins: [],
