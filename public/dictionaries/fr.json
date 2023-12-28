@@ -1,7 +1,17 @@
 {
-    "Index": {
-      "title": "Bonjour!!",
-      "subtitle": "Comment allez vous?",
-      "alertMessage": "Quelque-chose ne va pas!"
-    }
+  "Index": {
+    "title": "Bonjour le monde !!",
+    "subtitle": "Comment ça va ?",
+    "alertMessage": "Quelque chose s'est mal passé !"
+  },
+
+  "NavBar": {
+    "about": "À propos",
+    "contact": "Contact"
+  },
+
+  "LanguageSwitcher": {
+    "en": "Anglais",
+    "fr": "Français"
   }
+}

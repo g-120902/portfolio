@@ -25,7 +25,7 @@ const config: Config = {
       borderColor: {
         skin: {
           base: 'var(--primary-background-color)',
-          inverted: 'var(--highlight-background-color)',
+          inverted: 'var(--hover-text-color)',
         }
       },
 

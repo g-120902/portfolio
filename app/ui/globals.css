@@ -4,16 +4,15 @@
 
 :root {
   /* background */
-  --primary-background-color: #1D185A;
+  --primary-background-color: #120f29;
   --highlight-background-color: #4A4678;
 
   /* text */
-  --primary-text-color: #1F1E2C;
+  --primary-text-color: #6e6b96;
   --hover-text-color: #9B2B29;
 
   /* shadow */
   --primary-shadow-color: #D0201D;
-  --background-shadow-color: #1D185A;
 }
 
 body {

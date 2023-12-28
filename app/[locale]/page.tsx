@@ -1,10 +1,11 @@
-import Header from '../ui/components/atoms/Header';
+import {useTranslations} from 'next-intl';
 
 export default function Index() {
+  const t = useTranslations('Index');
 
   return (
     <>
-      <Header text='title'></Header>
+      <p>{t("title")}</p>
     </>
   );
 }

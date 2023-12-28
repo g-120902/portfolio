@@ -1,7 +1,7 @@
 import '../ui/globals.css'
 import '../lib/utils'
 import { inter } from '../ui/fonts/fonts'
-import LocaleSwitcher from '../ui/components/LocaleSwitcher';
+import NavBar from '../ui/components/NavBar';
 
 export const metadata = {
   title: 'Portfolio',
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang = {locale}>
 
       <body className={`${inter.className} antialiased`}>
-        <LocaleSwitcher />
+        <NavBar />
 
         {children}
       </body>

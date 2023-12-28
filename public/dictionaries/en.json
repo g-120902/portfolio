@@ -3,5 +3,15 @@
       "title": "Hello world!!",
       "subtitle": "How is it going?",
       "alertMessage": "Something went wrong!"
+    },
+
+    "NavBar": {
+      "about": "About",
+      "contact": "Contact"
+    },
+
+    "LanguageSwitcher": {
+      "en": "English",
+      "fr": "French"
     }
   }
