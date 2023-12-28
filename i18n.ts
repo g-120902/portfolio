@@ -1,14 +1,8 @@
-import {notFound} from "next/navigation";
-import {getRequestConfig} from 'next-intl/server';
- 
-// Can be imported from a shared config
-const locales = ['en', 'fr'];
- 
-export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
- 
-  return {
-    messages: (await import(`./public/dictionaries/${locale}.json`)).default
-  };
-});
+import { getRequestConfig } from "next-intl/server";
+
+// Create this configuration once per request and 
+// make it available to all Server Components.
+export default getRequestConfig(async ({ locale }) => ({
+  // Load translations for the active locale.
+  messages: (await import(`./public/dictionaries/${locale}.json`)).default,
+}));

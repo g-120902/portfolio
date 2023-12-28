@@ -1,5 +1,4 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import NavItem from '../atoms/MainNavBar/NavItem';
 import NavLogo from '../atoms/MainNavBar/NavLogo';
 import LanguageSelector from './LanguageSelector';
@@ -16,7 +15,6 @@ function MainHeader() {
           <LanguageSelector />
         </NavList>
       </nav>
-      <Outlet />
     </>
   );
 }

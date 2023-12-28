@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
-import i18n from '../../Translations.js';
-import LangFlagBtn from '../atoms/LanguageSelector/LangFlagBtn.js';
-import LanguageFlagList from '../atoms/LanguageSelector/LanguageFlagList.js';
+"use client";
 
-function LanguageSelector() {
-  const [isOpen, setIsOpen] = useState(false);
-  const currentLanguage = i18n.language;
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
+import { localeNames, locales } from "../../../../../i18nconfig";
 
-  const handleLangBtnClick = () => {
-    setIsOpen(!isOpen);
-  };
+export default function LocaleSwitcher() {
+  const locale = useLocale();
+  const router = useRouter();
+  const pathName = usePathname();
 
-  const handleLanguageChange = () => {
-    setIsOpen(false);
+  const switchLocale = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    router.push(pathName, { locale: e.target.value });
   };
 
   return (
-    <div className={`py-3 h-auto ${isOpen ? 'bg-skin-menu' : 'bg-skin-base'}`}>
-      <LangFlagBtn lang={currentLanguage} onClick={handleLangBtnClick} />
-
-      <div className={`absolute ${isOpen ? 'block' : 'hidden'} bg-skin-menu shadow-md z-10 py-3 pr-4 w-max`}>
-        <LanguageFlagList onLanguageChange={handleLanguageChange} />
-      </div>
+    <div>
+      <select
+        value={locale}
+        onChange={switchLocale}
+      >
+        {locales.map((loc) => (
+          <option key={loc} value={loc}>
+            {localeNames[loc]}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
-
-export default LanguageSelector;
