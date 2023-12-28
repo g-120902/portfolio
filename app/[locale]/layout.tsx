@@ -1,6 +1,7 @@
 import '../ui/globals.css'
 import '../lib/utils'
 import { inter } from '../ui/fonts/fonts'
+import LocaleSwitcher from '../ui/components/LocaleSwitcher';
 
 export const metadata = {
   title: 'Portfolio',
@@ -9,12 +10,19 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params: {locale}
 }: {
   children: React.ReactNode;
+  params: any;
 }) {
   return (
-    <html lang = "en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang = {locale}>
+
+      <body className={`${inter.className} antialiased`}>
+        <LocaleSwitcher />
+
+        {children}
+      </body>
     </html>
   );
 }
