@@ -1,7 +1,6 @@
-import { IntlProvider } from 'next/intl';
+import {NextIntlClientProvider} from 'next-intl';
 import { monofonto } from './lib/fonts';
-import Header from './ui/organisms/Header';
-import Footer from './ui/organisms/Footer';
+import './styles/globals.css'
 
 export default function Layout({
   children,
@@ -11,14 +10,12 @@ export default function Layout({
   params: any;
 }) {
   return (
-    <IntlProvider locale={locale} messages={{}}>
+    <NextIntlClientProvider locale={locale} messages={{}}>
       <html lang={locale}>
         <body className={`${monofonto.className} antialiased w-screen`}>
-          <Header />
           {children}
-          <Footer />
         </body>
       </html>
-    </IntlProvider>
+    </NextIntlClientProvider>
   );
 }
