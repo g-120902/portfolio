@@ -14,7 +14,7 @@ function Header(){
                     <Link href="/" className="self-center hover:text-skin-hover ">
                         <p className="font-bold text-xl md:text-2xl">Portfolio</p>
                     </Link>
-                    <div className="flex text-sm md:text-base self-center">
+                    <div className="flex text-sm md:text-base self-center sm:gap-2">
                         <Link href="about" className="hover:text-skin-hover hover:underline">
                             {t("about")}
                         </Link>

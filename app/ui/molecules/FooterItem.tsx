@@ -1,16 +1,20 @@
-function FooterItem({title, link}: {title: string, link: string}){
-    return(
+import FooterItemLink from "../atoms/FooterItemLink";
+import FooterItemText from "../atoms/FooterItemText";
+
+function FooterItem({ title, link, isLink }: { title: string, link: string, isLink: boolean }) {
+    return (
         <>
-            <div className="pt-4 px-4">
+            <div className="flex flex-col pt-4 px-4 justify-evenly lg:pb-2">
                 <h2
                     className="font-bold text-sm lg:text-base">
-                        {title}
+                    {title}
                 </h2>
-                <p
-                    className="text-skin-primary underline hover:text-skin-hover text-xs"
-                >
-                    {link}
-                </p>
+                <div className={isLink ? 'block': 'hidden'}>
+                    <FooterItemLink link={link}/>
+                </div>
+                <div className={isLink ? 'hidden': 'block'}>
+                    <FooterItemText link={link}/>
+                </div>
             </div>
         </>
     );
