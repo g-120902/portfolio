@@ -1,7 +1,16 @@
-import {NextIntlClientProvider} from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { monofonto } from './lib/fonts';
 import './styles/globals.css'
+import { locales } from './lib/navigation';
 
+export const metadata = {
+  title: 'Portfolio',
+  description: 'Gregory Albert Portfolio',
+}
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}
 export default function Layout({
   children,
   params: { locale },

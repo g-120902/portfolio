@@ -13,5 +13,9 @@
   "Presentation": {
     "hire": "Embauchez-moi !",
     "desc": "Développeur Full Stack (React, Next.js, Laravel, MySql, Java...)"
+  },
+
+  "NotFound": {
+    "title": "Page introuvable"
   }
 }
