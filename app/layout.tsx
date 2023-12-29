@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { monofonto } from './lib/fonts';
 import './styles/globals.css'
 import { locales } from './lib/navigation';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 export const metadata = {
   title: 'Portfolio',
@@ -18,6 +19,8 @@ export default function Layout({
   children: React.ReactNode;
   params: any;
 }) {
+  unstable_setRequestLocale(locale);
+  
   return (
     <NextIntlClientProvider locale={locale} messages={{}}>
       <html lang={locale}>
