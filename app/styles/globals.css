@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* background */
+  --primary-background-color: #120f29;
+  --highlight-background-color: #4A4678;
+
+  /* text */
+  --primary-text-color: #16142a;
+  --hover-text-color: #9B2B29;
+
+  /* shadow */
+  --primary-shadow-color: #D0201D;
+}
+
+body {
+ margin: 0;
+}

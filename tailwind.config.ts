@@ -32,7 +32,7 @@ const config: Config = {
       boxShadowColor: {
         skin: {
           primary: 'var(--primary-shadow-color)',
-          invebackgroundrted: 'var(--background-shadow-color)',
+          inverted: 'var(--background-shadow-color)',
         }
       },
 

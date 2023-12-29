@@ -1,5 +1,5 @@
 import { createSharedPathnamesNavigation } from 'next-intl/navigation';
-import { Locale } from './types';
+import { Locale } from '../types/enum';
 
 export const defaultLocale: Locale = 'en';
 
