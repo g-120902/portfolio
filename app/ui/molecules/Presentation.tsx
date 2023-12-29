@@ -2,6 +2,7 @@ import Image from "next/image"
 import { monofonto } from "../../lib/fonts";
 import Button from "../atoms/Button";
 import {useTranslations} from 'next-intl';
+import Avatar from "../atoms/Avatar";
 
 function Presentation(){
     const t = useTranslations('Presentation');
@@ -10,13 +11,7 @@ function Presentation(){
         <section className={`${monofonto.className} pt-40 md:pt-64 h-dvh`}>
                 <div className="flex justify-center">
                     <div className="flex flex-col text-center items-center">
-                        <Image
-                            src="/images/avatar.png"
-                            width={160}
-                            height={160}
-                            className="rounded-full border-4 border-skin-base"
-                            alt="Avatar"
-                        />
+                        <Avatar />
                         <div className="flex flex-col gap-5 pt-4 md:pt-8 md:pb-12 pb-8">
                             <h1 className="font-bold text-skin-primary lg:text-6xl text-3xl md:text-4xl">Gregory Albert</h1>
                             <p className="text-skin-primary text-sm font-extralight">{t("desc")}</p>

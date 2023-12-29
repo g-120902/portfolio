@@ -1,6 +1,6 @@
 import '../../styles/globals.css'
 import { inter } from '../../lib/fonts'
-import NavBar from '../../ui/organisms/NavBar';
+import NavBar from '../../ui/organisms/Header';
 
 export const metadata = {
   title: 'Portfolio',
