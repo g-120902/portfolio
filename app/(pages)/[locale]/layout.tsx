@@ -1,6 +1,7 @@
 import '../../styles/globals.css'
 import { inter } from '../../lib/fonts'
-import NavBar from '../../ui/organisms/Header';
+import Header from '../../ui/organisms/Header';
+import Footer from '../../ui/organisms/Footer';
 
 export const metadata = {
   title: 'Portfolio',
@@ -17,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang = {locale}>
       <body className={`${inter.className} antialiased w-screen`}>
-        <NavBar />
-
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

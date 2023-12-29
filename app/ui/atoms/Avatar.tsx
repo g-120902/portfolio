@@ -13,7 +13,7 @@ function Avatar() {
           alt="Avatar"
         />
         <Image
-          src="/images/avatar.jpg"
+          src="/images/avatar.png"
           width={160}
           height={160}
           className="rounded-full transform origin-center-right group-hover:hidden"

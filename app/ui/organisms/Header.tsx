@@ -10,7 +10,7 @@ function Header(){
         <>
             <div className="select-none px-4 sm:px-12 lg:px-52">
                 <div 
-                className={`${playfair.className} w-screen h-16 bg-transparent flex justify-between text-skin-primary`}>
+                className={`${playfair.className} h-16 bg-transparent flex justify-between text-skin-primary`}>
                     <Link href="/" className="self-center hover:text-skin-hover ">
                         <p className="font-bold text-xl md:text-2xl">Portfolio</p>
                     </Link>
