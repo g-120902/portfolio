@@ -4,7 +4,7 @@ import FooterItemText from "../atoms/FooterItemText";
 function FooterItem({ title, link, isLink }: { title: string, link: string, isLink: boolean }) {
     return (
         <>
-            <div className="flex flex-col pt-4 px-4 justify-evenly lg:pb-2">
+            <div className="flex flex-col pt-4 justify-evenly ">
                 <h2
                     className="font-bold text-sm lg:text-base">
                     {title}

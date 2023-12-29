@@ -8,23 +8,21 @@ function Header(){
     
     return(
         <>
-            <div className="select-none px-4 sm:px-12 lg:px-52">
+            <div className="select-none px-4 sm:px-8 lg:px-52 w-screen">
                 <div 
                 className={`${playfair.className} h-16 bg-transparent flex justify-between text-skin-primary`}>
                     <Link href="/" className="self-center hover:text-skin-hover ">
                         <p className="font-bold text-xl md:text-2xl">Portfolio</p>
                     </Link>
-                    <div className="flex text-sm md:text-base self-center sm:gap-2">
-                        <Link href="about" className="hover:text-skin-hover hover:underline">
-                            {t("about")}
-                        </Link>
-                        |
-                        <Link href="contact" className="hover:text-skin-hover hover:underline">
+                    <div className="flex md:text-base">
+                        
+                        <Link href="contact" className="hover:text-skin-hover hover:underline self-center">
                             {t("contact")}
                         </Link>
-                    </div>
-                
+                    
                     <LanguageSwitcher />
+                    </div>
+
                 </div>
             </div>
                 

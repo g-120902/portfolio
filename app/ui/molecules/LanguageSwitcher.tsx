@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: () => void }) {
     return (
         <div
-            className='p-2 text-skin-primary h-10 rounded-lg text-center select-none hover:text-skin-hover hover:underline text-sm md:text-base'
+            className='p-2 text-skin-primary h-10 rounded-lg text-center select-none hover:text-skin-hover hover:underline '
             onClick={onClick}>
             {lang !== undefined ? localeNames[lang] : 'N/A'}
         </div>
@@ -35,11 +35,11 @@ function LanguageSwitcher() {
     };
 
     return (
-        <div className='bg-transparent w-fit flex flex-col space-y-2 z-10 my-auto'>
-            <div className={selected ? 'hidden' : ''}>
+        <div className='bg-transparent w-fit flex flex-col z-10 my-auto'>
+            <div className={selected ? 'hidden' : 'self-center'}>
                 <LanguageBox lang={locale} onClick={open} />
             </div>
-            <div className={selected ? 'flex flex-col space-y-2 ' : 'hidden'}>
+            <div className={selected ? 'flex flex-col ' : 'hidden'}>
 
                 {locales.map((locale) => (
                     <Link key={locale} href={redirect} locale={locale}>

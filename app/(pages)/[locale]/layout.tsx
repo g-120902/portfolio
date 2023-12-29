@@ -1,5 +1,5 @@
 import '../../styles/globals.css'
-import { inter } from '../../lib/fonts'
+import { monofonto } from '../../lib/fonts'
 import Header from '../../ui/organisms/Header';
 import Footer from '../../ui/organisms/Footer';
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang = {locale}>
-      <body className={`${inter.className} antialiased w-screen`}>
+      <body className={`${monofonto.className} antialiased w-screen`}>
         <Header />
         {children}
         <Footer />

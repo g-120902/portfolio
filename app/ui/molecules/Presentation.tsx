@@ -8,7 +8,7 @@ function Presentation(){
     const t = useTranslations('Presentation');
 
     return(
-        <section className={`${monofonto.className} pt-40 md:pt-64 h-lvh`}>
+        <section className={`pt-40 md:pt-64 h-lvh`}>
                 <div className="flex justify-center">
                     <div className="flex flex-col text-center items-center">
                         <Avatar />
