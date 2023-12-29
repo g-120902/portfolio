@@ -1,4 +1,4 @@
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider, useLocale } from 'next-intl';
 import { monofonto } from './lib/fonts';
 import './styles/globals.css'
 import { locales } from './lib/navigation';
@@ -14,11 +14,10 @@ export function generateStaticParams() {
 }
 export default function Layout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: any;
 }) {
+  const {locale}:any = useLocale();
   unstable_setRequestLocale(locale);
   
   return (
