@@ -18,7 +18,7 @@ function Presentation(){
                             alt="Avatar"
                         />
                         <div className="flex flex-col gap-5 pt-4 md:pt-8 md:pb-12 pb-8">
-                            <h1 className="font-bold text-skin-primary text-6xl">Gregory Albert</h1>
+                            <h1 className="font-bold text-skin-primary lg:text-6xl text-3xl md:text-4xl">Gregory Albert</h1>
                             <p className="text-skin-primary text-sm font-extralight">{t("desc")}</p>
                         </div>
                         <Button text={t("hire")} />
