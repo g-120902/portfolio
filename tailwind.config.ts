@@ -12,6 +12,7 @@ const config: Config = {
         skin: {
           primary: 'var(--primary-background-color)',
           highlight: 'var( --highlight-background-color)',
+          inverted: 'var(--inverted-background-color)',
         }
       },
 

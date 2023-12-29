@@ -10,8 +10,8 @@
     "contact": "Contact"
   },
 
-  "LanguageSwitcher": {
-    "en": "Anglais",
-    "fr": "Français"
+  "Presentation": {
+    "hire": "Embauchez-moi !",
+    "desc": "Développeur Full Stack (React, Next.js, Laravel, MySql, Java...)"
   }
 }

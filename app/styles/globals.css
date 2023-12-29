@@ -4,8 +4,9 @@
 
 :root {
   /* background */
-  --primary-background-color: #120f29;
-  --highlight-background-color: #4A4678;
+  --primary-background-color: #16142a;
+  --highlight-background-color: #fefcb9;
+  --inverted-background-color: #9B2B29;
 
   /* text */
   --primary-text-color: #16142a;
