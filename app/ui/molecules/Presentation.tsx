@@ -17,7 +17,7 @@ function Presentation(){
                             className="rounded-full border-4 border-skin-base"
                             alt="Avatar"
                         />
-                        <div className="flex flex-col gap-3 pt-4 md:pt-8 md:pb-12 pb-8">
+                        <div className="flex flex-col gap-5 pt-4 md:pt-8 md:pb-12 pb-8">
                             <h1 className="font-bold text-skin-primary text-6xl">Gregory Albert</h1>
                             <p className="text-skin-primary text-sm font-extralight">{t("desc")}</p>
                         </div>
