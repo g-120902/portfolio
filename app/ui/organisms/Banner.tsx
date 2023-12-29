@@ -4,7 +4,7 @@ function Banner(){
     
     return(
         <>
-            <div className="top-0 absolute -z-10 bg-skin-highlight h-screen w-screen">
+            <div className="top-0 absolute -z-10 bg-skin-highlight h-fit w-screen">
                 <Presentation />
             </div>
             

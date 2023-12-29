@@ -7,11 +7,11 @@ function Presentation(){
     const t = useTranslations('Presentation');
 
     return(
-        <section className={`${monofonto.className} pt-40 md:pt-64`}>
+        <section className={`${monofonto.className} pt-40 md:pt-64 h-dvh`}>
                 <div className="flex justify-center">
                     <div className="flex flex-col text-center items-center">
                         <Image
-                            src="/images/avatar.jpg"
+                            src="/images/avatar.png"
                             width={160}
                             height={160}
                             className="rounded-full border-4 border-skin-base"
