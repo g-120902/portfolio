@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang = {locale}>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased w-screen`}>
         <NavBar />
 
         {children}
