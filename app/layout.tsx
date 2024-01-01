@@ -1,19 +1,24 @@
 import { monofonto } from './lib/fonts';
 import './styles/globals.css'
-import { getLocale} from 'next-intl/server';
-import { NextIntlClientProviders } from './lib/providers'
+import { locales } from './lib/navigation';
+import { unstable_setRequestLocale } from 'next-intl/server';
+
 export const metadata = {
   title: 'Portfolio',
   description: 'Gregory Albert Portfolio',
 }
 
-
-export default async function Layout({
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}
+export default function Layout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: any;
 }) {
-  const locale = await getLocale();
+  unstable_setRequestLocale(locale);
   
   return (
       <html lang={locale}>

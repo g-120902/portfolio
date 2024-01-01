@@ -3,3 +3,7 @@ export const getRedirectPath = (pathName: string) => {
     return redirectPath || "/";
 };
 
+export const getLocalePath = (pathName: string) => {
+    const locale = pathName.substring(1,3);
+    return locale;
+};

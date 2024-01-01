@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, locales, localeNames } from "../../lib/navigation";
 import { Locale } from "../../types/enum";
 import { usePathname } from 'next/navigation';
-import { getRedirectPath } from '../../utils/getRedirect';
+import { getLocalePath, getRedirectPath } from '../../utils/getRedirect';
 
 function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: () => void }) {
     return (
@@ -19,7 +19,7 @@ function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: ()
 function LanguageSwitcher() {
     const pathName = usePathname();
     const [selected, setSelected] = useState(false);
-    const locale: Locale = pathName.substring(1, 3) as Locale;
+    const locale: Locale = getLocalePath(pathName) as Locale;
     const [redirect, setRedirect] = useState(getRedirectPath(pathName));
 
     useEffect(() => {
