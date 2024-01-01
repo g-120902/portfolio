@@ -5,15 +5,17 @@ import Footer from '../../ui/organisms/Footer';
 
 export default function RootLayout({
   children
+
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
+
       <Header />
-        {children}
-        <Footer />
+      {children}
+      <Footer />
     </>
-        
+
   );
 }

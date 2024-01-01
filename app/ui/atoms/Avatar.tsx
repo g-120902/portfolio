@@ -13,6 +13,7 @@ function Avatar() {
           alt="Avatar"
         />
         <Image
+          priority = {true}
           src="/images/avatar.png"
           width={160}
           height={160}
