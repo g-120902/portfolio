@@ -13,7 +13,7 @@ function Presentation(){
 
                         <div className="flex flex-col gap-5 pt-4 md:pt-8 md:pb-12 pb-8">
                             <h1 className={`${playfair.className} font-bold text-white lg:text-5xl text-3xl md:text-4xl`}>Gregory Albert</h1>
-                            <p className="text-black text-sm font-extralight">{t("desc")}</p>
+                            <p className="text-black text-sm md:text-base font-extralight">{t("desc")}</p>
                         </div>
                         <Button text={t("hire")} />
             </div>
