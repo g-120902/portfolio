@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 function Avatar() {
   return (
-    <div className="relative w-40 h-40 group">
-      <div className="rounded-full border-4 border-skin-base group-hover:bg-skin-primary group-hover:scale-x-[-1] transition-transform duration-500">
+    <div className="relative w-40 h-40 sm:block hidden group">
+      <div className="rounded-full border-4 border-white group-hover:bg-skin-primary group-hover:scale-x-[-1] transition-transform duration-500">
       <Image
           src="/images/document.jpg"
           width={160}

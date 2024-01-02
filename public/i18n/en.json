@@ -17,5 +17,10 @@
 
     "NotFound": {
       "title": "Page not found"
+    },
+
+    "About": {
+      "title": "Professional Summary",
+      "content": "Confident young professional with a passion for learning and self-development. Eager to leverage education and training in the computer science field to support the growth and success of a high performing organization."
     }
   }

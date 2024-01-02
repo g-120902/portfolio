@@ -6,7 +6,7 @@ function FooterItem({ title, link, isLink }: { title: string, link: string, isLi
         <>
             <div className="flex flex-col pt-4 justify-evenly ">
                 <h2
-                    className="font-bold text-sm lg:text-base">
+                    className="font-bold text-sm lg:text-base text-skin-primary">
                     {title}
                 </h2>
                 <div className={isLink ? 'block': 'hidden'}>

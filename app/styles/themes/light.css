@@ -1,0 +1,13 @@
+html[data-theme="light"] {
+    /* background */
+    --primary-background-color: #ffffff;
+    --highlight-background-color: #b61d1a;
+    --inverted-background-color: #000000;
+
+    /* text */
+    --primary-text-color: #000000;
+    --hover-text-color: #b61d1a;
+
+    /* shadow */
+    --primary-shadow-color: #b61d1a;
+    }

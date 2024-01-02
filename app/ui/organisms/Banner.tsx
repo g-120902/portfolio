@@ -1,10 +1,12 @@
+import About from "../molecules/About";
 import Presentation from "../molecules/Presentation";
 
 function Banner(){
     
     return(
         <>
-            <div className="top-0 absolute -z-10 bg-skin-highlight h-fit w-screen select-none">
+            <div className="h-dvh w-screen select-none flex md:flex-row justify-start items-center flex-col-reverse">
+                <About />
                 <Presentation />
             </div>
             

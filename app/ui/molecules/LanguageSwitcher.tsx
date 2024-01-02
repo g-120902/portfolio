@@ -9,7 +9,7 @@ import { getLocalePath, getRedirectPath } from '../../utils/getRedirect';
 function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: () => void }) {
     return (
         <div
-            className='p-2 text-skin-primary h-10 rounded-lg text-center select-none hover:text-skin-hover hover:underline '
+            className='p-2 text-white h-10 text-center select-none hover:underline bg-skin-highlight rounded-xl px-2'
             onClick={onClick}>
             {lang !== undefined ? localeNames[lang] : 'N/A'}
         </div>
@@ -35,7 +35,7 @@ function LanguageSwitcher() {
             <div className={selected ? 'hidden' : 'self-center'}>
                 <LanguageBox lang={locale} onClick={open} />
             </div>
-            <div className={selected ? 'flex flex-col ' : 'hidden'}>
+            <div className={selected ? 'py-5 rounded-md bg-skin-primary flex flex-col gap-5' : 'hidden'}>
 
                 {locales.map((locale) => (
                     <Link key={locale} href={redirect} locale={locale}>

@@ -1,12 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import "themes/light.css";
-@import "themes/dark.css";
-
-@layer base {
-  html {
+html[data-theme="dark"] {
     /* background */
     --primary-background-color: #000000;
     --highlight-background-color: #b61d1a;
@@ -18,9 +10,4 @@
 
     /* shadow */
     --primary-shadow-color: #b61d1a;
-  }
-}
-
-body {
-  margin: 0;
-}
+    }
