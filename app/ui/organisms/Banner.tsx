@@ -5,7 +5,7 @@ function Banner(){
     
     return(
         <>
-            <div className="h-dvh w-screen select-none flex md:flex-row justify-start items-center flex-col-reverse">
+            <div className="h-fit w-screen select-none flex md:flex-row justify-start items-center flex-col-reverse">
                 <About />
                 <Presentation />
             </div>
