@@ -7,7 +7,7 @@ function About() {
     return (
         <>
 
-            <div className="flex flex-col w-11/12 md:w-7/12 px-4 md:px-20 gap-16 h-5/6 py-40">
+            <div className="flex flex-col w-11/12 md:w-7/12 px-4 md:px-20 gap-16 h-dvh py-40">
                 <ThemeSwitcher />
 
                 <h1 className="text-skin-primary font-semibold text-2xl md:text-3xl lg:text-6xl">{t('title')}</h1>

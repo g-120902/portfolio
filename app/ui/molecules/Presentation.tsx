@@ -7,7 +7,7 @@ function Presentation(){
     const t = useTranslations('Presentation');
 
     return(
-        <section className={`pt-40 md:pt-64 h-lvh bg-skin-highlight md:w-5/12 w-screen py-10`}>
+        <section className={`pt-40 md:pt-64 h-dvh bg-skin-highlight md:w-5/12 w-screen py-10`}>
                 <div className="flex flex-col text-center items-center">
                 <Avatar />
 
