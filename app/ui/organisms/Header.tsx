@@ -1,8 +1,8 @@
 import LanguageSwitcher from "../molecules/LanguageSwitcher";
 import { playfair } from "../../lib/fonts";
-import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import NavLink from "../atoms/NavLink";
+import { Link } from "../../lib/navigation";
 
 function Header() {
     const t = useTranslations('NavBar');
