@@ -7,8 +7,9 @@ function Presentation(){
     const t = useTranslations('Presentation');
 
     return(
-        <section className={`pt-40 md:pt-64 h-lvh bg-skin-highlight md:w-5/12 w-screen py-10`}>
-                <div className="flex flex-col text-center items-center">
+        <section className={`h-lvh bg-skin-highlight md:w-5/12 w-screen py-10`}>
+            <div className="bg-skin-primary w-20 h-20 rotate-45 -translate-x-10 -translate-y-10"/>
+                <div className="flex flex-col text-center items-center pt-40 md:pt-64">
                 <Avatar />
 
                         <div className="flex flex-col gap-5 pt-4 md:pt-8 md:pb-12 pb-8">

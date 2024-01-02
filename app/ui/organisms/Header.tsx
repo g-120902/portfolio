@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <>
-            <div className="select-none px-4 sm:px-8 lg:px-24 w-screen absolute bg-skin-primary">
+            <div className="select-none px-4 sm:px-8 lg:px-24 w-screen absolute bg-skin-primary z-20">
                 <div
                     className={`${playfair.className} h-16 flex justify-between text-skin-primary`}>
                     <Link href="/" className="self-center hover:text-skin-hover ">
