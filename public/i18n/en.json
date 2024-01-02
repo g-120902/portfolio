@@ -21,6 +21,7 @@
 
     "About": {
       "title": "Professional Summary",
+      "welcome": "Welcome to my website developed from scratch on the next.js framework",
       "content": "Confident young professional with a passion for learning and self-development. Eager to leverage education and training in the computer science field to support the growth and success of a high performing organization."
     }
   }

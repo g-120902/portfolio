@@ -1,0 +1,14 @@
+@keyframes shrink {
+  from {
+    width: 100%;
+    transform: scaleX(1);
+  }
+  to {
+    width: 80%;
+    transform: scaleX(0.8);
+  }
+}
+
+.shrinkAnimation {
+  animation: shrink 0.5s ease-in-out infinite alternate;
+}
