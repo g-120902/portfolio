@@ -1,9 +1,9 @@
 'use client'
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getRedirectPath } from "../../utils/getRedirect";
+import { Link } from "../../lib/navigation";
 
 function NavLink({ link, text }: { link: string, text: string }) {
 
