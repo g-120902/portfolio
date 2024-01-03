@@ -9,7 +9,7 @@ function About() {
     return (
         <>
 
-            <div className="flex flex-col w-11/12 md:w-7/12 px-4 md:px-20 gap-24 h-svh py-40">
+            <div className="flex flex-col w-11/12 md:w-7/12 px-4 md:px-20 gap-24 h-fit py-20">
                 <ThemeSwitcher />
                 <span className="flex flex-col items-start gap-5 group">
                     <ChatBubbleLeftEllipsisIcon className="h-5 md:h-7 text-skin-primary group-hover:animate-spin" />
