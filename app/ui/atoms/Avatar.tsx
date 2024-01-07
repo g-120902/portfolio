@@ -10,7 +10,7 @@ function Avatar() {
           src="/images/document.jpg"
           width={160}
           height={160}
-          className="scale-x-[-1] rounded-full transform origin-center-right group-hover:block hidden opacity-85"
+          className="scale-x-[-1] rounded-full transform origin-center-right group-hover:block hidden"
           alt="Avatar"
         />
         <Image

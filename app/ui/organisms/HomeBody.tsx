@@ -4,7 +4,7 @@ import ProfileAbout from "../molecules/ProfileAbout";
 function HomeBody() {
     return (
         <>
-            <section className="h-fit flex md:flex-row flex-col-reverse items-center justify-center md:justify-evenly">
+            <section className="h-fit flex md:flex-row flex-col-reverse items-center justify-center md:justify-evenly -z-10">
                 <div className="h-fit md:h-svh md:w-5/12 flex items-center p-10 md:p-0">
                     <ProfileCard />
                 </div>
