@@ -5,7 +5,8 @@ function Avatar() {
   return (
     <div className="relative w-40 h-40 group">
       <div className="rounded-full bg-white group-hover:bg-skin-primary group-hover:scale-x-[-1] transition-transform duration-500">
-      <Image
+        <Image
+          priority={true}
           src="/images/document.jpg"
           width={160}
           height={160}
@@ -13,7 +14,7 @@ function Avatar() {
           alt="Avatar"
         />
         <Image
-          priority = {true}
+          priority={true}
           src="/images/avatar.png"
           width={160}
           height={160}
