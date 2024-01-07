@@ -22,7 +22,7 @@ export default function Layout({
   
   return (
       <html lang={locale}>
-        <body className={`${monofonto.className} antialiased w-screen overflow-x-hidden bg-skin-primary`}>
+        <body className={`${monofonto.className} antialiased w-screen overflow-x-hidden bg-skin-primary flex flex-col gap-10`}>
           {children}
         </body>
       </html>
