@@ -1,5 +1,4 @@
 import ProfileCard from "../atoms/ProfileCard";
-import Separator from "../atoms/Separator";
 import ProfileAbout from "../molecules/ProfileAbout";
 
 function HomeBody() {
@@ -10,12 +9,9 @@ function HomeBody() {
                     <ProfileCard />
                 </div>
                 <div className="h-fit flex flex-col gap-10 md:w-5/12">
-                    <div className="block md:hidden">
-                    <Separator />
 
-                    </div>
                     <div className="p-10">
-                    <ProfileAbout />
+                        <ProfileAbout />
 
                     </div>
                 </div>
