@@ -36,7 +36,6 @@ ${message}`
         return NextResponse.json({ submitted: true });
 
     } catch (error) {
-        console.error('Error parsing JSON:', error);
         return NextResponse.json({ error: 'Error connecting to mailing API' }, { status: 400 });
     }
 }
