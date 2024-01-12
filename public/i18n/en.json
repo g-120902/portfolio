@@ -28,6 +28,16 @@
     "Profile": {
       "title": "About me",
       "desc": "{age} year old professional in the Computer Science field. Can easily learn new technologies to adapt to the company requirements and be a real asset in the software development area. Has some work experience as project manager for both backend and front end project notably on the Next js framework; the same used to develop this portfolio website."
+    },
+
+    "Contact": {
+      "title": "Contact Me",
+      "subtitle": "Submitting this form will automatically send me an email!",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "company": "Company",
+      "email": "Email",
+      "message": "Message"
     }
     
   }

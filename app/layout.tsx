@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Gregory Albert Portfolio',
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return locales.map((locale) => ({locale}));
 }
 export default function Layout({

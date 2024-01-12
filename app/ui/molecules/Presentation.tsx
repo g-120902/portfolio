@@ -2,6 +2,7 @@ import Button from "../atoms/Button";
 import {useTranslations} from 'next-intl';
 import Avatar from "../atoms/Avatar";
 import { playfair } from "../../lib/fonts";
+import { Link } from "../../lib/navigation";
 
 function Presentation(){
     const t = useTranslations('Presentation');
@@ -16,7 +17,9 @@ function Presentation(){
                             <h1 className={`${playfair.className} font-bold text-white lg:text-5xl text-3xl md:text-4xl`}>Gregory Albert</h1>
                             <p className="text-black text-sm md:text-base font-extralight">{t("desc")}</p>
                         </div>
+                        <Link href="contact">
                         <Button text={t("hire")} />
+                        </ Link>
             </div>
         </section>
     );

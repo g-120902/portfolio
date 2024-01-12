@@ -15,7 +15,7 @@ function NavLink({ link, text }: { link: string, text: string }) {
     }, [pathName]);
 
     return (
-        <Link href={link} className={redirect != link ? "hover:text-skin-hover hover:underline self-center" : "hover:text-skin-hover underline self-center "}>
+        <Link href={link} className={redirect.substring(1) != link ? "hover:text-skin-hover hover:underline self-center" : "hover:text-skin-hover underline self-center "}>
             {text}
         </Link>
     )

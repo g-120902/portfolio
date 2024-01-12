@@ -1,5 +1,5 @@
 export const getRedirectPath = (pathName: string) => {
-    const redirectPath = pathName.substring(4);
+    const redirectPath = pathName.substring(3);
     return redirectPath || "/";
 };
 

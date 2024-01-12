@@ -4,10 +4,11 @@ import Footer from '../../ui/organisms/Footer';
 
 
 export default function RootLayout({
-  children
-
+  children,
+  locale
 }: {
   children: React.ReactNode;
+  locale: string
 }) {
   return (
     <>
