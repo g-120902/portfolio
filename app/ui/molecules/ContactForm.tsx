@@ -3,6 +3,7 @@
 import FormLabel from "./FormLabel";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { InformationCircleIcon } from "@heroicons/react/16/solid";
 
 function ContactForm({ labelData }: { labelData: any }) {
     const [form, setForm] = useState({
@@ -54,7 +55,7 @@ function ContactForm({ labelData }: { labelData: any }) {
 
     return (
         <>
-            <form onSubmit={onSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20 text-skin-primary flex flex-col gap-10">
+            <form onSubmit={onSubmit} className="max-w-xl text-skin-primary flex flex-col gap-10">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <FormLabel required={false} label={labelData.firstName} />
@@ -81,8 +82,9 @@ function ContactForm({ labelData }: { labelData: any }) {
 
                 <button disabled={disabled} type="submit" className="block w-full rounded-md bg-skin-highlight px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:text-skin-hover hover:bg-skin-inverted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{labelData.submit}</button>
 
-                <div className={alert ? "flex bg-yellow-100 rounded-lg p-4 mb-4 text-sm text-yellow-700 w-6/12 self-center" : "hidden"} role="alert">
-                    <div>
+                <div className={alert ? "flex bg-yellow-100 rounded-lg p-4 text-sm text-yellow-700 w-6/12 self-center mb-20" : "hidden"} role="alert">
+                    <div className="flex gap-2">
+                        <InformationCircleIcon className="h-6"/>
                         <span className="font-medium">Warning alert!</span> Issue connecting to mailing server.
                     </div>
                 </div>

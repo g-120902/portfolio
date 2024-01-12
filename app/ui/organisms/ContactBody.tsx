@@ -2,6 +2,7 @@ import ContactForm from "../molecules/ContactForm";
 import ThemeSwitcher from "../molecules/ThemeSwitcher";
 import ContactTitle from "../molecules/ContactTitle";
 import { useTranslations } from "next-intl";
+import { AtSymbolIcon } from "@heroicons/react/16/solid";
 
 function ContactBody() {
     const t = useTranslations("Contact");
@@ -17,11 +18,14 @@ function ContactBody() {
 
     return (
         <>
-            <div className="bg-skin-primary px-12 py-24 sm:py-32 lg:px-24 gap-5 h-svh">
+            <section className="bg-skin-primary flex justify-evenly">
+                <div className="flex flex-col gap-20  my-40 sm:px-24 px-10">
                 <ThemeSwitcher />
                 <ContactTitle />
                 <ContactForm labelData={labelData}/>
-            </div>
+                </div>
+                <AtSymbolIcon className="w-5/12 text-skin-hover hidden md:block"/>
+            </section>
         </>
     );
 }
