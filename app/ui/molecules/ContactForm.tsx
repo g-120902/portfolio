@@ -18,7 +18,7 @@ function ContactForm({ labelData }: { labelData: any }) {
     const [disabled, setDisabled] = useState(false);
     const router = useRouter();
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: any) => {
         setForm({
             ...form,
             [e.target.name]: e.target.value
@@ -77,7 +77,7 @@ function ContactForm({ labelData }: { labelData: any }) {
                 </div>
                 <div className="sm:col-span-2">
                     <FormLabel required={true} label={labelData.message} />
-                    <input onChange={handleChange} type="text" name="message" required={true} id="message" className="block w-full rounded-md border-2 border-skin-inverted px-3.5 py-2 text-gray-900 shadow-sm ring-inset shadow-skin-inverted placeholder:text-gray-400 sm:text-sm sm:leading-6"></input>
+                    <textarea onChange={handleChange} rows={3} name="message" required={true} id="message" className="block w-full rounded-md border-2 border-skin-inverted px-3.5 py-2 text-gray-900 shadow-sm ring-inset shadow-skin-inverted placeholder:text-gray-400 sm:text-sm sm:leading-6"></textarea>
                 </div>
 
                 <button disabled={disabled} type="submit" className="block w-full rounded-md bg-skin-highlight px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:text-skin-hover hover:bg-skin-inverted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{labelData.submit}</button>
