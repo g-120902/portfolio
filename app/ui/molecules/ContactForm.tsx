@@ -2,8 +2,9 @@
 
 import FormLabel from "./FormLabel";
 import { FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
-function ContactForm({labelData} : {labelData: any}) {
+function ContactForm({ labelData }: { labelData: any }) {
     const [form, setForm] = useState({
         firstName: "",
         lastName: "",
@@ -12,31 +13,45 @@ function ContactForm({labelData} : {labelData: any}) {
         message: ""
     });
 
+    const [alert, setAlert] = useState(false);
+    const [disabled, setDisabled] = useState(false);
+    const router = useRouter();
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setForm({
             ...form,
             [e.target.name]: e.target.value
-            
+
         });
     };
 
-    const onSubmit = async(e: FormEvent) => {
+    const onSubmit = async (e: FormEvent) => {
         e.preventDefault()
-        
+
+        setDisabled(true);
+
         try {
             const res = await fetch('/api/contact', {
-                
+
                 method: 'POST',
                 body: JSON.stringify(form),
                 headers: {
                     'content-type': 'application/json'
                 }
             })
-        } catch(err: any){
+
+            if (res.ok) {
+                router.push('/success');
+            } else {
+                setAlert(true);
+                setDisabled(false);
+
+            }
+        } catch (err: any) {
             console.error("Error:", err)
         }
     };
-    
+
     return (
         <>
             <form onSubmit={onSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20 text-skin-primary flex flex-col gap-10">
@@ -61,10 +76,16 @@ function ContactForm({labelData} : {labelData: any}) {
                 </div>
                 <div className="sm:col-span-2">
                     <FormLabel required={true} label={labelData.message} />
-                    <input onChange={handleChange} type="text" name="message" required={true}  id="message" className="block w-full rounded-md border-2 border-skin-inverted px-3.5 py-2 text-gray-900 shadow-sm ring-inset shadow-skin-inverted placeholder:text-gray-400 sm:text-sm sm:leading-6"></input>
+                    <input onChange={handleChange} type="text" name="message" required={true} id="message" className="block w-full rounded-md border-2 border-skin-inverted px-3.5 py-2 text-gray-900 shadow-sm ring-inset shadow-skin-inverted placeholder:text-gray-400 sm:text-sm sm:leading-6"></input>
                 </div>
 
-                <button type="submit" className="block w-full rounded-md bg-skin-highlight px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:text-skin-hover hover:bg-skin-inverted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{labelData.submit}</button>
+                <button disabled={disabled} type="submit" className="block w-full rounded-md bg-skin-highlight px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:text-skin-hover hover:bg-skin-inverted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{labelData.submit}</button>
+
+                <div className={alert ? "flex bg-yellow-100 rounded-lg p-4 mb-4 text-sm text-yellow-700 w-6/12 self-center" : "hidden"} role="alert">
+                    <div>
+                        <span className="font-medium">Warning alert!</span> Issue connecting to mailing server.
+                    </div>
+                </div>
             </form>
         </>
     );

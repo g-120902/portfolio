@@ -38,6 +38,12 @@
       "company": "Company",
       "email": "Email",
       "message": "Message"
+    },
+
+    "Success": {
+      "title": "Thank you for contacting me",
+      "subtitle": "Have a great day!",
+      "back": "Go Back"
     }
     
   }

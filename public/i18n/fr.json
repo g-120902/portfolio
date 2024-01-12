@@ -32,5 +32,11 @@
     "company": "Entreprise",
     "email": "Email",
     "message": "Message"
+  },
+
+  "Success": {
+    "title": "Merci de m'avoir contacté",
+    "subtitle": "Passez une excellente journée !",
+    "back": "Retourner"
   }
 }

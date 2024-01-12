@@ -21,7 +21,7 @@ export async function POST(req: Request) {
             subject: 'You have been contacted!',
             text: `Hello Gregory,
             
-You have been contacted by ${firstName} ${lastName} ${company}.
+You have been contacted by ${firstName} ${lastName} | ${company}.
             
 ${message}`
         };
@@ -33,7 +33,7 @@ ${message}`
             console.error('Error sending email');
         }
 
-        return NextResponse.json({ submitted: true });
+        return NextResponse.json({ submitted: true }, { status: 200 });
 
     } catch (error) {
         return NextResponse.json({ error: 'Error connecting to mailing API' }, { status: 400 });
