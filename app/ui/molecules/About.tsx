@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { ChatBubbleLeftEllipsisIcon } from "@heroicons/react/16/solid";
-import styles from "../../styles/shrink.module.css";
 
 function About() {
     const t = useTranslations('About');

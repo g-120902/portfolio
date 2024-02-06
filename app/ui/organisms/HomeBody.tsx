@@ -4,11 +4,12 @@ import ProfileAbout from "../molecules/ProfileAbout";
 function HomeBody() {
     return (
         <>
-            <section className="h-fit flex md:flex-row flex-col-reverse items-center justify-center md:justify-evenly -z-20">
-                <div className="h-fit md:h-svh md:w-5/12 flex items-center p-10 md:p-0">
+            <section className="h-fit py-20 flex md:flex-row flex-col-reverse items-center justify-center md:justify-evenly -z-20">
+                <div className="px-10">
                     <ProfileCard />
+
                 </div>
-                <div className="h-fit flex flex-col gap-10 md:w-5/12">
+                <div className="h-fit flex flex-col gap-10 md:w-7/12">
 
                     <div className="p-10">
                         <ProfileAbout />
