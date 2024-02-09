@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { Link, usePathname } from "../../lib/navigation";
-import { Locale } from "../../types/enum";
-import { useLocale } from 'next-intl';
+
 
 function NavLink({ link, text }: { link: string, text: string }) {
 
     const pathName = usePathname();
-    const locale: Locale = useLocale() as Locale;
     const [redirect, setRedirect] = useState(pathName);
 
     useEffect(() => {
