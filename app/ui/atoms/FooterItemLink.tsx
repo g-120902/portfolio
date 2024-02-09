@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function FooterItemLink({link}: {link: string}) {
+function FooterItemLink({ link }: { link: string }) {
     return (
         <Link
             target="_blank"
