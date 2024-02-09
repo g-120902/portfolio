@@ -1,10 +1,9 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
-import { Link, locales, localeNames } from "../../lib/navigation";
+import React, { useState } from 'react';
+import { locales, localeNames, usePathname, useRouter } from "../../lib/navigation";
 import { Locale } from "../../types/enum";
-import { usePathname } from 'next/navigation';
-import { getLocalePath, getRedirectPath } from '../../utils/getRedirect';
+import { useLocale } from 'next-intl';
 
 function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: () => void }) {
     return (
@@ -19,15 +18,16 @@ function LanguageBox({ lang, onClick }: { lang: Locale | undefined; onClick?: ()
 function LanguageSwitcher() {
     const pathName = usePathname();
     const [selected, setSelected] = useState(false);
-    const locale: Locale = getLocalePath(pathName) as Locale;
-    const [redirect, setRedirect] = useState(getRedirectPath(pathName));
+    const locale: Locale = useLocale() as Locale;
+    const router = useRouter();
 
-    useEffect(() => {
-      setRedirect(getRedirectPath(pathName));
-    }, [pathName]);
-    
     const open = () => {
         setSelected(!selected);
+    };
+
+    const handleTranslate = (localeParam: Locale) => {
+        router.replace(pathName, { locale: localeParam });
+        router.refresh();
     };
 
     return (
@@ -38,9 +38,9 @@ function LanguageSwitcher() {
             <div className={selected ? 'py-5 rounded-md bg-skin-primary flex flex-col gap-5' : 'hidden'}>
 
                 {locales.map((locale) => (
-                    <Link key={locale} href={redirect} locale={locale}>
+                    <div key={locale} onClick={() => handleTranslate(locale)}>
                         <LanguageBox lang={locale} onClick={open} />
-                    </Link>
+                    </div>
 
                 ))}
             </div>

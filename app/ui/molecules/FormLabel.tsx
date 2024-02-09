@@ -1,5 +1,3 @@
-import { DetailedHTMLProps, LabelHTMLAttributes } from "react";
-
 function FormLabel({ required, label}: { required: boolean, label: string }) {
     return (
         <span className="flex gap-2">

@@ -2,7 +2,8 @@
     "Index": {
       "title": "Hello world!!",
       "subtitle": "How is it going?",
-      "alertMessage": "Something went wrong!"
+      "alertMessage": "Something went wrong!",
+      "language": "en"
     },
 
     "NavBar": {
