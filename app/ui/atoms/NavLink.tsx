@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Link, usePathname } from "../../lib/navigation";
 
-
 function NavLink({ link, text }: { link: string, text: string }) {
 
     const pathName = usePathname();
