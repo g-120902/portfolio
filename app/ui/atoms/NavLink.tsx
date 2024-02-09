@@ -13,7 +13,6 @@ function NavLink({ link, text }: { link: string, text: string }) {
 
     useEffect(() => {
         setRedirect(pathName);
-        console.log(locale);
     }, [pathName]);
 
     return (
