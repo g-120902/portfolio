@@ -18,6 +18,7 @@ function ContactBody() {
 
     return (
         <>
+
             <section className="bg-skin-primary flex justify-evenly">
                 <AtSymbolIcon className="w-5/12 text-skin-hover hidden md:block" />
                 <div className="flex flex-col gap-20  my-40 sm:px-24 px-10">

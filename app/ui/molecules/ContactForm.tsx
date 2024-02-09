@@ -4,6 +4,7 @@ import FormLabel from "./FormLabel";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { InformationCircleIcon } from "@heroicons/react/16/solid";
+import LoadingOverlay from "../atoms/LoadingOverlay";
 
 function ContactForm({ labelData }: { labelData: any }) {
     const [form, setForm] = useState({
@@ -51,10 +52,12 @@ function ContactForm({ labelData }: { labelData: any }) {
         } catch (err: any) {
             console.error("Error:", err)
         }
-    };
-
+    }; 
+    
     return (
         <>
+            <LoadingOverlay disabled={disabled}/>
+
             <form onSubmit={onSubmit} className="max-w-xl text-skin-primary flex flex-col gap-10">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
