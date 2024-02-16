@@ -4,5 +4,5 @@ import { getRequestConfig } from "next-intl/server";
 // make it available to all Server Components.
 export default getRequestConfig(async ({ locale }) => ({
   // Load translations for the active locale.
-  messages: (await import(`./public/i18n/${locale}.json`)).default,
+  messages: (await import(`./langs/${locale}.json`)).default,
 }));

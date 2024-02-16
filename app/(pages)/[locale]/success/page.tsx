@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Link } from "../../../lib/navigation";
+import { Link } from "../../../i18n/navigation";
 
 export default function SuccessPage() {
   const t = useTranslations("Success");

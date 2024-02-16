@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { Link, usePathname } from "../../lib/navigation";
+import { Link, usePathname } from "../../i18n/navigation";
 
 function NavLink({ link, text }: { link: string, text: string }) {
 

@@ -2,7 +2,7 @@ import Button from "../atoms/Button";
 import { useTranslations } from 'next-intl';
 import Avatar from "../atoms/Avatar";
 import { playfair } from "../../lib/fonts";
-import { Link } from "../../lib/navigation";
+import { Link } from "../../i18n/navigation";
 
 function Presentation() {
     const t = useTranslations('Presentation');

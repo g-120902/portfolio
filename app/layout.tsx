@@ -1,6 +1,6 @@
 import { monofonto } from './lib/fonts';
 import './styles/globals.css'
-import { locales } from './lib/navigation';
+import { locales } from './i18n/navigation';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next'
 

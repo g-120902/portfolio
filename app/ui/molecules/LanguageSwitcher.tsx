@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { locales, localeNames, usePathname, useRouter } from "../../lib/navigation";
+import { locales, localeNames, usePathname, useRouter } from "../../i18n/navigation";
 import { Locale } from "../../types/enum";
 import { useLocale } from 'next-intl';
 

@@ -1,5 +1,5 @@
 import createMiddleware from "next-intl/middleware";
-import { defaultLocale, locales} from './app/lib/navigation';
+import { defaultLocale, locales} from './app/i18n/navigation';
 
 export default createMiddleware({
 

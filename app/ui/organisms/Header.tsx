@@ -2,7 +2,7 @@ import LanguageSwitcher from "../molecules/LanguageSwitcher";
 import { playfair } from "../../lib/fonts";
 import { useTranslations } from 'next-intl';
 import NavLink from "../atoms/NavLink";
-import { Link } from "../../lib/navigation";
+import { Link } from "../../i18n/navigation";
 
 function Header() {
     const t = useTranslations('NavBar');
