@@ -1,0 +1,43 @@
+{
+  "Index": {
+    "title": "Bonjour le monde !!",
+    "subtitle": "Comment ça va ?",
+    "alertMessage": "Quelque chose s'est mal passé !",
+    "language": "fr"
+  },
+  "NavBar": {
+    "about": "À propos",
+    "contact": "Contactez-Moi"
+  },
+  "Presentation": {
+    "hire": "Embauchez-moi !",
+    "desc": "Développeur Full Stack (React, Next.js, Laravel, MySql, Java...)"
+  },
+  "NotFound": {
+    "title": "Page introuvable"
+  },
+  "About": {
+    "title": "Résumé Professionnel",
+    "welcome": "Bienvenue sur mon site web développé de zéro avec le framework Next.js",
+    "content": "Jeune professionnel confiant avec une passion pour l'apprentissage et le développement personnel. Souhaitant mettre à profit l'éducation et la formation dans le domaine de l'informatique pour soutenir la croissance et le succès d'une organisation performante."
+  },
+  "Profile": {
+    "title": "À propos de moi",
+    "desc": "Professionnel de {age} ans dans le domaine de l'informatique. Peut facilement apprendre de nouvelles technologies pour s'adapter aux exigences de l'entreprise et être un véritable atout dans le domaine du développement logiciel. A une expérience de travail en tant que chef de projet pour des projets backend et frontend, notamment sur le framework Next.js; le même utilisé pour développer ce site web de portfolio."
+  },
+  "Contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Soumettre ce formulaire m'enverra automatiquement un e-mail !",
+    "first-name": "Prénom",
+    "last-name": "Nom",
+    "company": "Entreprise",
+    "email": "Email",
+    "message": "Message"
+  },
+
+  "Success": {
+    "title": "Merci de m'avoir contacté",
+    "subtitle": "Passez une excellente journée !",
+    "back": "Retourner"
+  }
+}

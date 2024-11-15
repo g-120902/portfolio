@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "themes/light.css";
+@import "themes/dark.css";
+
+@layer base {
+  html {
+    /* background */
+    --primary-background-color: #000000;
+    --highlight-background-color: #b61d1a;
+    --inverted-background-color: #cfc2c2;
+
+    /* text */
+    --primary-text-color: #ffffff;
+    --hover-text-color: #b61d1a;
+
+    /* shadow */
+    --primary-shadow-color: #b61d1a;
+  }
+}
+
+body {
+  margin: 0;
+}

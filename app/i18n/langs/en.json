@@ -1,0 +1,50 @@
+{
+    "Index": {
+      "title": "Hello world!!",
+      "subtitle": "How is it going?",
+      "alertMessage": "Something went wrong!",
+      "language": "en"
+    },
+
+    "NavBar": {
+      "about": "About",
+      "contact": "Contact Me"
+    },
+
+    "Presentation": {
+      "hire": "Hire Me!",
+      "desc": "Full Stack Developer (React, Next.js, Laravel, MySql, Java...)"
+    },
+
+    "NotFound": {
+      "title": "Page not found"
+    },
+
+    "About": {
+      "title": "Professional Summary",
+      "welcome": "Welcome to my website developed from scratch on the next.js framework",
+      "content": "Confident young professional with a passion for learning and self-development. Eager to leverage education and training in the computer science field to support the growth and success of a high performing organization."
+    },
+
+    "Profile": {
+      "title": "About me",
+      "desc": "{age} year old professional in the Computer Science field. Can easily learn new technologies to adapt to the company requirements and be a real asset in the software development area. Has some work experience as project manager for both backend and front end project notably on the Next js framework; the same used to develop this portfolio website."
+    },
+
+    "Contact": {
+      "title": "Contact Me",
+      "subtitle": "Submitting this form will automatically send me an email!",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "company": "Company",
+      "email": "Email",
+      "message": "Message"
+    },
+
+    "Success": {
+      "title": "Thank you for contacting me",
+      "subtitle": "Have a great day!",
+      "back": "Go Back"
+    }
+    
+  }
